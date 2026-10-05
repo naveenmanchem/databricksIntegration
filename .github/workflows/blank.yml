@@ -18,9 +18,9 @@ jobs:
         run: |
           databricks -v
 
-      - name: Deploy Asset Bundle
-        env:
-          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
-          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
-        run: |
-          databricks bundle deploy -e prod
+     # - name: Deploy Asset Bundle
+     #   env:
+     #     DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+     #     DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+     #   run: |
+     #     databricks bundle deploy -e prod
