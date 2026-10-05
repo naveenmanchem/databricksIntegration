@@ -12,9 +12,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Databricks CLI
-        run: |
-          curl -fsSL https://githubusercontent.com | sh
-
+        uses: databricks/setup-cli@main
+      
       - name: Verify CLI Installation
         run: |
           databricks -v
